@@ -1,17 +1,24 @@
-* {
+* 
+
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
 .principal {
     height: 100vh;
     width: 100%;
     /* background-image: url(../img/Zoom\ Background\ -\ Planetas\ no\ Espaço.png); */
-    background-position: center;
-    background-size: cover;
-    background-color: #191919;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.656), rgba(0, 0, 0, 0.16)), url("./imagens/background.png");
+ background-color: #191919;
+ background-image: url("../img/background.png");
+ background-size: cover;
+   
+   
+    
 
 }
 nav{
@@ -42,11 +49,12 @@ li {
     font-size: 25px;
     margin-right: 30px;
     cursor: pointer;
+    transition: 0.55;
 
 }
-li:hover {
+li a:hover {
     color: #f9004d;
-    transition: 0.55;
+    
 }
 
 .meu-nome {
@@ -75,18 +83,20 @@ section {
         background-color: #191919;
         justify-content: center;
        gap: 2rem;
+      padding: 10rem 2rem;
+       
         
     }
 section .imagem {
-    height: 300px;
+    height: 400px;
     width: 350px;
     border-radius: 100%;
     border: 2px solid #f9004d;
-background-image: url("./imagens/Luizz.jpg");
-background-size: cover;
+background-image: url("../img/Luizz.jpg");
+background-size: 100%;
 background-repeat: no-repeat;
 background-position: center;
-margin-top: 200px;
+
 
 }
 
@@ -125,6 +135,7 @@ section div button:hover {
     padding-top: 50px;
     padding-bottom: 100px;
 
+
    }
 .projetos h2{
     color: white;
@@ -156,7 +167,6 @@ section div button:hover {
     color: #f9004d;
     margin-top: 20px;
     margin-bottom: 40px ;
-
 
 }
 .card a {
@@ -244,7 +254,7 @@ section .imagem2{
     width: 350px;
     border-radius: 100%;
     border: 2px solid white;
-background-image: url("./imagens/Eu.jpg");
+background-image: url("../img/Eu.jpg");
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
@@ -258,4 +268,113 @@ margin-top: 200px;
 .Diferenciada span {
     color: #f9004d;
 
+}
+
+.Diferenciada {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+.carambolas {
+    background-color: #191919;
+    align-items: center;
+    flex-direction: column;
+    padding: 200px 200px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    
+}
+.carambolas h3 {
+    background-color: #191919;
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 300px;
+    padding: 100px 100px;
+    padding-top: 50px;
+   padding-bottom: 150px;
+   background-size: cover;
+
+ 
+}
+
+.carambolas image{
+    padding: 200px 200px;
+}
+.carambolas h2{
+
+    color: white;
+    padding: 100px 100px;
+    padding-bottom: 120px;
+}
+
+.portifolio-maneiro{
+    background-color: #191919;
+    padding-bottom: 20px;
+    display: flex;
+
+}
+/* Adicione esta classe para a animação de header */
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+    padding: 15px 30px;
+    position: fixed;
+
+    background: #191919;
+
+    z-index: 2;
+}
+nav h2 {
+    padding-left: 40px;
+}
+
+ul li{
+    padding-left: 150px;
+}
+
+
+/* Seletor para o container principal Vue */
+#app {
+    text-align: center;
+  
+    padding: 20px;
+    
+    border-radius: 5px;
+    background-color: #191919;
+    
+}
+
+/* Estilo para a mensagem */
+#app p {
+    font-size: 18px;
+    color: white;
+}
+
+/* Estilo para o botão */
+#app button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilo quando o cursor passa sobre o botão */
+#app button:hover {
+    background-color: #45a049;
+}
+
+.app{
+    background-color: #191919;
 }
